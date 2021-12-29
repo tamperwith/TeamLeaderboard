@@ -1,13 +1,153 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+section {
+	height: 100%;
+}
+.modal-background {
+	opacity: 0.2;
+}
+.congratulations {
+	width: 100%;
+	text-align: center;
+}
+
+.congratulations .title {
+	font-size: 100px;
+}
+.congratulations .subtitle {
+	font-size: 50px;
+}
+
+.progress.is-large {
+	height: 100px;
+}
+
+.points {
+	width: 70px;
+	margin: 0;
+}
+
+.edit.selected {
+	animation: shake 5s infinite;
+}
+
+.count-btn * {
+	display: block;
+}
+.edit .count-btn {
+	transition: 0.3s;
+	opacity: 0.3;
+}
+.count-btn {
+	display: block;
+	transition: 0.3s;
+	opacity: 0;
+}
+.selected .count-btn {
+	transition: 0.3s;
+	opacity: 1;
+}
+.settings {
+	position: fixed;
+	bottom: 0;
+}
+.settings {
+	width: 100%;
+	left: 0;
+}
+.settings .settings-btn {
+	left: 90%;
+}
+
+.settings-btn {
+	transition: 0.3s;
+}
+.settings-btn:hover {
+	transform: scale(1.3);
+}
+.settings-btn:active {
+	transform: scale(0.9);
+}
+
+.editButtons {
+	opacity: 1;
+	text-align: left;
+	position: fixed;
+	bottom: 40px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.editButtons:hover {
+	transition: 0.3s;
+	opacity: 0.9;
+}
+.editButtons.edit .editButton {
+	transition: 0.3s;
+	opacity: 1;
+	animation: shake 3s infinite;
+}
+.addTeamButton,
+.editButton {
+	transition: 0.1s;
+}
+
+.addTeamButton:hover,
+.editButton:hover {
+	transform: scale(1.3);
+}
+
+.addTeamButton:active,
+.editButton:active {
+	transform: scale(0.8);
+	animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(0.3px, 0.3px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-0.3px, -2px) rotate(-0.3deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(0.3deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(0.3px, -0.3px) rotate(0.3deg);
+	}
+	50% {
+		transform: translate(-0.3px, 2px) rotate(-0.3deg);
+	}
+	60% {
+		transform: translate(-3px, 0.3px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 0.3px) rotate(-0.3deg);
+	}
+	80% {
+		transform: translate(-0.3px, -0.3px) rotate(0.3deg);
+	}
+	90% {
+		transform: translate(0.3px, 2px) rotate(0deg);
+	}
+	95% {
+		transform: translate(0.3px, -2px) rotate(-0.3deg);
+	}
+	100% {
+		transform: translate(0.3px, 0.3px) rotate(0deg);
+	}
 }
